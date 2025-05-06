@@ -1,29 +1,51 @@
-# Introduction to CSS
+(Index.html)
 
-## Objectives
-Link an external CSS file to an HTML document.
-Apply basic styling using selectors.
-Use colors, fonts, and spacing effectively.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-## Instructions
+    <!--External CSS: use ONLY the file name if it's in the same folder -->
+    <link rel="stylesheet" href="style.css">
 
-Create a style.css file.
-Apply CSS to a HTML page.
-Style elements using:
-Classes and IDs.
-Color and typography.
-Margins, paddings, and borders.
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: rgb(71, 60, 67);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
 
->[!NOTE]
->  - Include at least:
->  - Use of 3 selectors
->  - Style an image
->  - Margin, Padding & Borders
->  - Different font
+    <title>Intro to CSS</title>
+</head>
+<body>
 
-# Tasks
- - Link an external CSS file.
- - Apply at least 3 different selectors.
- - Improve readability and aesthetics.
+    <!-- Inline CSS -->
+    <h1 style="color: rgb(102, 70, 125); font-size: 50px;">Cascading Stylesheets</h1>
 
-Happy Coding! 💻✨
+    <p>This is a paragraph styled with internal CSS.</p>
+
+    <a id="google" href="https://www.google.com">Google</a>
+
+    <footer class="home-footer">
+        &copy; 2025
+    </footer>
+
+</body>
+</html>
+
+(Style.css)
+#google {
+    color: rgb(50, 181, 14);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-footer {
+    color: rgb(226, 147, 43);
+    font-weight: bold;
+}
+
+
